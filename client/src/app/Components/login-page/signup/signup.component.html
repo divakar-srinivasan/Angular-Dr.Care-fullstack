@@ -1,0 +1,29 @@
+<div class="container-fluid d-flex justify-content-center align-items-center">
+    <div class="box">
+        <div class="container">
+            <form class="was-validated">
+                <div class="row my-5"><h1 class="fs-1">Signup</h1></div>
+                <div class="row mb-4">
+                    <input class="form-control form-control-lg is-invalid" type="text" [(ngModel)]="username" name="username" placeholder="Username..." required [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="row mb-4">
+                    <input class="form-control form-control-lg is-invalid" type="email" [(ngModel)]="email" name="email" placeholder="Email..." required [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="row mb-5">
+                    <input class="form-control form-control-lg is-invalid" type="password" [(ngModel)]="password" name="password" placeholder="password..." required [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="row mb-3">
+                    <button type="submit" class="btn btn-success btn-lg rounded-pill" (click)="register()">SUBMIT</button>
+                </div>
+                <div class="row"><p class="fs-5">Already have an account? <a  routerLink="/login" routerLinkActive="active">Login</a></p></div>
+            </form>
+            <div class="divider my-lg-4"></div>
+        </div>
+        <div class="row align-items-center mb-5 mt-4 gap-3 ps-5">
+            <img src="../../../../assets/google.png" alt="loading" class="col-2" height="32px" width="32px">
+            <img src="../../../../assets/facebook.png" alt="loading" class="col-2" height="32px" width="32px">
+            <img src="../../../../assets/twitter.png" alt="loading" class="col-2" height="32px" width="32px">
+            <img src="../../../../assets/instagram.png" alt="loading" class="col-2" height="34px" width="34px">
+        </div>
+    </div>
+</div>

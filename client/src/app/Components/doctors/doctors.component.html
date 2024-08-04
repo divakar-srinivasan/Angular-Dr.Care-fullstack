@@ -1,0 +1,43 @@
+<div class="container-fluid d-flex justify-content-center align-items-center">
+<div class="container px-5 my-5 pb-5">
+    <h1 class="mt-5 mb-5  fs-1">Doctor Appointment</h1>
+    <form class="was-validated">
+      <div class="mb-4">
+        <label for="fullName" class="form-label fs-5 mb-2">Full Name</label>
+        <input type="text" class="form-control form-control-lg is-invalid" id="fullName" placeholder="Enter your full name" required [(ngModel)]="fullName" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="mb-4">
+        <label for="email" class="form-label fs-5">Email</label>
+        <input type="email" class="form-control form-control-lg is-invalid" id="email" placeholder="Enter your email" required [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="mb-4">
+        <label for="phone" class="form-label fs-5">Phone Number</label>
+        <input type="tel" class="form-control form-control-lg is-invalid" id="phone" placeholder="Enter your phone number" required [(ngModel)]="phone" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="mb-4">
+        <label for="doctor" class="form-label fs-5">Select Doctor</label>
+        <select class="form-select form-select-lg is-invalid" id="doctor" required [(ngModel)]="selectedDoctor" [ngModelOptions]="{standalone: true}">
+          <option selected disabled>Select a doctor</option>
+          <option value="1">Dr. John Doe</option>
+          <option value="2">Dr. Jane Smith</option>
+          <option value="3">Dr. David Johnson</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <label for="date" class="form-label fs-5">Date</label>
+        <input type="date" class="form-control form-control-lg is-invalid" id="date" required [(ngModel)]="selectedDate" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="mb-4">
+        <label for="time" class="form-label fs-5">Time</label>
+        <input type="time" class="form-control form-control-lg is-invalid" id="time" required [(ngModel)]="selectedTime" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label fs-5">Message</label>
+        <textarea class="form-control form-control-lg is-invalid" id="message" rows="3" placeholder="Enter your message" required [(ngModel)]="message" [ngModelOptions]="{standalone: true}"></textarea>
+      </div>
+      <div class="text-center">
+      <button type="submit" class="btn rounded-pill" (click)="register()">Submit</button>
+       </div>
+    </form>
+  </div>
+</div>
