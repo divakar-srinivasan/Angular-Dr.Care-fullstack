@@ -29,7 +29,7 @@ DrCare is a MEAN stack-based web application designed to simplify the process of
 
 ## Technologies Used
 
-- **Frontend**: Angular, HTML, CSS
+- **Frontend**: Angular, Bootstrap
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Authentication**: JWT (JSON Web Tokens)
